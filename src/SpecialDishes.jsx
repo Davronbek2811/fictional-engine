@@ -1,7 +1,7 @@
 import React from 'react'
-import salad1 from './assets/salad1.png'
-import salad2 from './assets/salad2.png'
-import salad3 from './assets/salad3.png'
+import salad1 from './assets/Salad1.png'
+import salad2 from './assets/Salad2.png'
+import salad3 from './assets/Salad3.png'
 import Love from './assets/Love.png'
 
 function SpecialDishes() {
