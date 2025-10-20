@@ -5,22 +5,12 @@ export default defineConfig({
   plugins: [react()],
   base: '/fictional-engine/',
   build: {
+    outDir: 'dist',
+    assetsDir: 'assets',
     rollupOptions: {
       output: {
-        format: 'es'
+        manualChunks: undefined
       }
     }
-  },
-  optimizeDeps: {
-    include: ['tailwindcss', 'postcss', 'autoprefixer']
-  },
-  esbuild: {
-    loader: {
-      '.js': 'jsx',
-      '.jsx': 'jsx'
-    }
-  },
-  resolve: {
-    extensions: ['.mjs', '.js', '.jsx', '.json']
   }
 })
