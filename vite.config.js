@@ -13,5 +13,14 @@ export default defineConfig({
   },
   optimizeDeps: {
     include: ['tailwindcss', 'postcss', 'autoprefixer']
+  },
+  esbuild: {
+    loader: {
+      '.js': 'jsx',
+      '.jsx': 'jsx'
+    }
+  },
+  resolve: {
+    extensions: ['.mjs', '.js', '.jsx', '.json']
   }
 })
